@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLIC & FLIC | ILS ENTERPRISE</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+background:#050505;
+font-family:Arial,sans-serif;
+color:#fff;
+}
+.hero{
+position:relative;
+min-height:88vh;
+display:flex;
+align-items:center;
+overflow:hidden;
+}
+.hero img{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:.28;
+}
+.overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.55));
+}
+.hero-content{
+position:relative;
+z-index:2;
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+}
+.logo{
+font-size:72px;
+font-weight:900;
+color:#ffd36f;
+line-height:.95;
+}
+.subtitle{
+margin-top:16px;
+font-size:22px;
+color:#ddd;
+max-width:720px;
+line-height:1.7;
+}
+.hero-btns{
+margin-top:30px;
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+}
+.btn-main{
+background:#ffd36f;
+color:#000;
+padding:16px 28px;
+border-radius:999px;
+font-weight:900;
+text-decoration:none;
+}
+.btn-ghost{
+border:1px solid rgba(255,211,111,.3);
+padding:16px 28px;
+border-radius:999px;
+color:#ffd36f;
+text-decoration:none;
+}
+.section{
+max-width:1450px;
+margin:auto;
+padding:70px 20px;
+}
+.head{
+margin-bottom:40px;
+}
+.head h2{
+font-size:52px;
+color:#ffd36f;
+margin-bottom:14px;
+}
+.head p{
+color:#aaa;
+font-size:18px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:28px;
+}
+.card{
+background:linear-gradient(180deg,#111,#080808);
+border:1px solid rgba(255,211,111,.12);
+border-radius:26px;
+overflow:hidden;
+transition:.35s;
+position:relative;
+}
+.card:hover{
+transform:translateY(-8px);
+border-color:rgba(255,211,111,.45);
+box-shadow:0 0 40px rgba(255,180,0,.14);
+}
+.img-wrap{
+position:relative;
+height:320px;
+background:#0d0d0d;
+overflow:hidden;
+}
+.img-wrap img{
+width:100%;
+height:100%;
+object-fit:contain;
+padding:16px;
+transition:.35s;
+}
+.card:hover img{
+transform:scale(1.08);
+}
+.code{
+position:absolute;
+top:14px;
+left:14px;
+background:#000;
+border:1px solid rgba(255,211,111,.25);
+padding:8px 14px;
+border-radius:999px;
+color:#ffd36f;
+font-weight:700;
+}
+.content{
+padding:22px;
+}
+.name{
+font-size:24px;
+font-weight:900;
+margin-bottom:14px;
+}
+.price{
+background:rgba(255,211,111,.08);
+border:1px solid rgba(255,211,111,.18);
+padding:12px;
+border-radius:16px;
+text-align:center;
+font-weight:900;
+color:#ffd36f;
+margin-bottom:12px;
+}
+.sub{
+color:#aaa;
+margin-bottom:20px;
+}
+.btn{
+display:block;
+text-align:center;
+background:#1a1303;
+border:1px solid rgba(255,211,111,.22);
+padding:15px;
+border-radius:18px;
+color:#ffd36f;
+font-weight:800;
+text-decoration:none;
+}
+.footer{
+padding:40px 20px;
+text-align:center;
+border-top:1px solid rgba(255,211,111,.12);
+color:#888;
+margin-top:60px;
+}
+@media(max-width:1100px){
+.grid{grid-template-columns:repeat(2,1fr)}
+.logo{font-size:58px}
+}
+@media(max-width:700px){
+.grid{grid-template-columns:1fr}
+.logo{font-size:42px}
+.subtitle{font-size:18px}
+.head h2{font-size:38px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<img src="images/product/o-el-536-box.jpg">
+<div class="overlay"></div>
+
+<div class="hero-content">
+<div class="logo">GLIC & FLIC</div>
+<div class="subtitle">
+打火机、火枪、补充气批发供应。<br>
+专攻神料店、香烛店、杂货店、便利店。
+</div>
+
+<div class="hero-btns">
+<a class="btn-main" href="https://wa.me/60146023456">WhatsApp 联系</a>
+<a class="btn-ghost" href="#catalog">查看产品</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="catalog">
+<div class="head">
+<h2>全部产品集中展示</h2>
+<p>
+Shopee 显示为整盒零售参考价。<br>
+真正批发价请 WhatsApp 获取。
+</p>
+</div>
+
+<div class="grid">
+
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/i-fw-069-box.jpg" alt="FW-069">
+        <div class="code">FW-069</div>
+      </div>
+      <div class="content">
+        <div class="name">Flicker Jet Flame</div>
+        <div class="price">Shopee 零售参考价 RM130</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 FW-069 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/o-el-536-box.jpg" alt="EL-536">
+        <div class="code">EL-536</div>
+      </div>
+      <div class="content">
+        <div class="name">Flicker EL-536</div>
+        <div class="price">Shopee 零售参考价 RM28</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 EL-536 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/m-d16-box.jpg" alt="D16">
+        <div class="code">D16</div>
+      </div>
+      <div class="content">
+        <div class="name">DENIZ 欧洲版</div>
+        <div class="price">Shopee 零售参考价 RM38</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 D16 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/a-w130a-box.jpg" alt="W130A">
+        <div class="code">W130A</div>
+      </div>
+      <div class="content">
+        <div class="name">Glictel Torch</div>
+        <div class="price">Shopee 零售参考价 RM58</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 W130A 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/b-w206-box.jpg" alt="W206">
+        <div class="code">W206</div>
+      </div>
+      <div class="content">
+        <div class="name">Mini Torch</div>
+        <div class="price">Shopee 零售参考价 RM75</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 W206 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/c-w013-box.jpg" alt="W013">
+        <div class="code">W013</div>
+      </div>
+      <div class="content">
+        <div class="name">Windproof</div>
+        <div class="price">Shopee 零售参考价 RM40</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 W013 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/d-086-box.jpg" alt="086">
+        <div class="code">086</div>
+      </div>
+      <div class="content">
+        <div class="name">Safety Lighter</div>
+        <div class="price">Shopee 零售参考价 RM59.50</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 086 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/e-w198-box.jpg" alt="W198">
+        <div class="code">W198</div>
+      </div>
+      <div class="content">
+        <div class="name">Long Neck</div>
+        <div class="price">Shopee 零售参考价 RM60</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 W198 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/f-20ml-box.jpg" alt="20ML">
+        <div class="code">20ML</div>
+      </div>
+      <div class="content">
+        <div class="name">Gas Refill</div>
+        <div class="price">Shopee 零售参考价 RM40</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 20ML 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/g-180ml-box.jpg" alt="180ML">
+        <div class="code">180ML</div>
+      </div>
+      <div class="content">
+        <div class="name">Butane Gas</div>
+        <div class="price">Shopee 零售参考价 RM36</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 180ML 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/h-300ml-box.jpg" alt="300ML">
+        <div class="code">300ML</div>
+      </div>
+      <div class="content">
+        <div class="name">Gas Refill</div>
+        <div class="price">Shopee 零售参考价 RM60</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 300ML 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/j-fw-380-box.jpg" alt="FW-380">
+        <div class="code">FW-380</div>
+      </div>
+      <div class="content">
+        <div class="name">Pattern Series</div>
+        <div class="price">Shopee 零售参考价 RM95</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 FW-380 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/k-fw-139-box.jpg" alt="FW-139">
+        <div class="code">FW-139</div>
+      </div>
+      <div class="content">
+        <div class="name">Metal Style</div>
+        <div class="price">Shopee 零售参考价 RM50</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 FW-139 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/l-fw-011-box.jpg" alt="FW-011">
+        <div class="code">FW-011</div>
+      </div>
+      <div class="content">
+        <div class="name">Gradient Series</div>
+        <div class="price">Shopee 零售参考价 RM38</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 FW-011 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/n-fw-066-box.jpg" alt="FW-066">
+        <div class="code">FW-066</div>
+      </div>
+      <div class="content">
+        <div class="name">Refillable</div>
+        <div class="price">Shopee 零售参考价 RM40</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 FW-066 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="img-wrap">
+        <img src="images/product/p-al-506-box.jpg" alt="AL-506">
+        <div class="code">AL-506</div>
+      </div>
+      <div class="content">
+        <div class="name">Windproof</div>
+        <div class="price">Shopee 零售参考价 RM24</div>
+        <div class="sub">批发价请 WhatsApp</div>
+        <a class="btn" href="https://wa.me/60146023456?text=你好，我想询问 AL-506 批发价">WhatsApp 询价</a>
+      </div>
+    </div>
+    
+</div>
+</section>
+
+<div class="footer">
+© ILS ENTERPRISE · GLIC & FLIC Wholesale Catalog
+</div>
+
+</body>
+</html>
