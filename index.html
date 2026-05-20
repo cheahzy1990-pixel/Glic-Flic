@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glic & Flic 打火机批发 | ILS ENTERPRISE</title>
+<meta name="description" content="Glictel、Flicker、Deniz 打火机、火枪、长嘴点火器与补充气批发供应。">
+<!-- version: safe-hover-v3 -->
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(255,211,111,.18), transparent 32%),
+    linear-gradient(180deg,#030303,#0b0803 45%,#030303);
+  color:#fff7e8;
+  font-family:Arial,"Microsoft YaHei",sans-serif;
+}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,92%);margin:auto}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(5,5,5,.88);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,211,111,.22);
+}
+.nav{
+  height:74px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+}
+.brand{
+  color:#ffd36f;
+  font-size:24px;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+.brand small{
+  display:block;
+  color:#b8ad96;
+  font-size:12px;
+  margin-top:4px;
+  letter-spacing:0;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#d7a83f,#ffd36f);
+  color:#130d03;
+  padding:13px 22px;
+  border-radius:999px;
+  font-weight:900;
+  box-shadow:0 12px 32px rgba(215,168,63,.22);
+}
+
+.hero{
+  position:relative;
+  min-height:660px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+.hero img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:.48;
+  transform:scale(1.04);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.58),rgba(0,0,0,.18));
+}
+.hero .wrap{position:relative;z-index:2}
+.tag{
+  display:inline-block;
+  border:1px solid rgba(255,211,111,.28);
+  color:#ffd36f;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(255,211,111,.08);
+  font-weight:800;
+}
+h1{
+  font-size:clamp(42px,7vw,86px);
+  line-height:.98;
+  margin:22px 0;
+  letter-spacing:-.05em;
+  max-width:760px;
+}
+.hero p{
+  font-size:20px;
+  line-height:1.8;
+  color:#dfd0ae;
+  max-width:720px;
+}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.ghost{
+  border:1px solid rgba(255,211,111,.28);
+  color:#ffd36f;
+  padding:13px 20px;
+  border-radius:999px;
+  background:rgba(0,0,0,.35);
+  font-weight:800;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  margin-top:-54px;
+  position:relative;
+  z-index:3;
+}
+.stat{
+  background:rgba(17,17,17,.92);
+  border:1px solid rgba(255,211,111,.22);
+  border-radius:24px;
+  padding:22px;
+}
+.stat b{display:block;color:#ffd36f;font-size:24px;margin-bottom:6px}
+.stat span{color:#b8ad96;font-size:14px}
+
+section{padding:72px 0}
+.head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:28px;
+  margin-bottom:28px;
+}
+h2{font-size:clamp(32px,4.5vw,52px);margin:0;letter-spacing:-.04em}
+.head p{color:#b8ad96;line-height:1.75;max-width:560px}
+
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.pill{
+  color:#ffd36f;
+  border:1px solid rgba(255,211,111,.25);
+  background:rgba(255,211,111,.06);
+  border-radius:999px;
+  padding:9px 14px;
+  font-weight:800;
+  font-size:13px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  align-items:start;
+}
+.card{
+  background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.018));
+  border:1px solid rgba(255,211,111,.22);
+  border-radius:26px;
+  overflow:visible;
+  box-shadow:0 18px 54px rgba(0,0,0,.35);
+  transition:.32s ease;
+  position:relative;
+  z-index:1;
+}
+.card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(255,211,111,.48);
+  z-index:50;
+}
+
+.photo{
+  position:relative;
+  height:300px;
+  background:
+    radial-gradient(circle at center, rgba(255,211,111,.08), transparent 54%),
+    #0d0d0d;
+  overflow:hidden;
+  border-radius:24px 24px 18px 18px;
+  transition:.32s ease;
+}
+.card:hover .photo{
+  transform:scale(1.08);
+  box-shadow:
+    0 0 30px rgba(255,211,111,.28),
+    0 0 80px rgba(255,180,0,.13);
+}
+
+.photo img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+  padding:14px;
+  transition:.42s ease;
+  transform-origin:center;
+}
+.photo .main{
+  opacity:1;
+  transform:scale(1.08);
+}
+.photo .hover{
+  opacity:0;
+  transform:scale(1.05);
+}
+.card:hover .main{
+  opacity:0;
+  transform:scale(1.14);
+}
+.card:hover .hover{
+  opacity:1;
+  transform:scale(1.10);
+}
+
+.photo b{
+  position:absolute;
+  top:14px;
+  left:14px;
+  background:rgba(0,0,0,.72);
+  border:1px solid rgba(255,211,111,.25);
+  color:#ffd36f;
+  border-radius:999px;
+  padding:7px 12px;
+  font-size:13px;
+  z-index:3;
+}
+
+.info{padding:20px 18px 18px}
+.info span{color:#ffd36f;font-weight:900;font-size:13px}
+.info h3{font-size:20px;line-height:1.2;margin:8px 0 10px}
+.info p{color:#b8ad96;font-size:14px;line-height:1.65;min-height:70px}
+.info a{
+  display:flex;
+  justify-content:center;
+  border:1px solid rgba(255,211,111,.25);
+  background:rgba(215,168,63,.13);
+  color:#ffd36f;
+  border-radius:16px;
+  padding:11px;
+  font-weight:900;
+  margin-top:14px;
+  transition:.25s ease;
+}
+.info a:hover{background:#ffd36f;color:#090600}
+
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.feature{
+  padding:24px;
+  border-radius:24px;
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.09);
+}
+.feature b{color:#ffd36f;font-size:19px}
+.feature p{color:#b8ad96;line-height:1.65}
+
+.cta{
+  margin-top:44px;
+  padding:38px;
+  border-radius:32px;
+  border:1px solid rgba(255,211,111,.22);
+  background:linear-gradient(135deg,rgba(215,168,63,.22),rgba(201,52,43,.13)),#100c06;
+  display:flex;
+  justify-content:space-between;
+  gap:26px;
+  align-items:center;
+}
+.cta p{color:#b8ad96}
+footer{
+  border-top:1px solid rgba(255,211,111,.22);
+  color:#b8ad96;
+  text-align:center;
+  padding:28px;
+  font-size:13px;
+}
+
+@media(max-width:1100px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:780px){
+  .grid{grid-template-columns:repeat(2,1fr);gap:18px}
+  .features{grid-template-columns:1fr 1fr}
+  .head{display:block}
+  .head p{margin-top:12px}
+  .cta{flex-direction:column;align-items:flex-start}
+  .photo{height:260px}
+  .card:hover .photo{transform:none}
+}
+@media(max-width:520px){
+  .brand{font-size:18px}
+  .grid,.features,.stats{grid-template-columns:1fr}
+  .stats{margin-top:20px}
+  h1{font-size:42px}
+  .hero p{font-size:17px}
+  .photo{height:330px}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">GLIC & FLIC<small>ILS ENTERPRISE · 打火机批发供应</small></div>
+    <a class="btn" href="https://wa.me/60146023456?text=你好，我想要打火机批发产品表。">WhatsApp 询价</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <img src="images/product/o-el-536-box.jpg" alt="EL-536">
+  <div class="wrap">
+    <span class="tag">神料店 · 香烛店 · 杂货店 · 便利店</span>
+    <h1>打火机批发，专攻传统门店补货。</h1>
+    <p>Glictel、Flicker、Deniz 系列打火机、火枪、长嘴点火器与补充气。盒装展示清楚，颜色醒目，适合收银台、香烛区和日常用品区陈列销售。</p>
+    <div class="actions">
+      <a class="btn" href="https://wa.me/60146023456?text=你好，我想要打火机批发产品表。">索取批发产品表</a>
+      <a class="ghost" href="#products">查看产品</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap stats">
+  <div class="stat"><b>32+</b><span>网站版产品照片</span></div>
+  <div class="stat"><b>批发</b><span>适合长期补货</span></div>
+  <div class="stat"><b>盒装</b><span>方便门店陈列</span></div>
+  <div class="stat"><b>WhatsApp</b><span>直接询价跟进</span></div>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <div class="head">
+      <h2>产品 Catalog</h2>
+      <p>这版不会硬裁图片，产品会完整显示。鼠标移到产品卡会浮起、发光，并切换成颜色展示图。</p>
+    </div>
+
+    <div class="pills">
+      <span class="pill">Flicker</span>
+      <span class="pill">Glictel</span>
+      <span class="pill">Deniz</span>
+      <span class="pill">火枪</span>
+      <span class="pill">补充气</span>
+      <span class="pill">神料店适合</span>
+    </div>
+
+    <div class="grid">
+      
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/a-w130a-box.jpg" alt="W130A">
+    <img class="hover" src="images/product/a-w130a-5-colors.jpg" alt="W130A colors">
+    <b>W130A</b>
+  </div>
+  <div class="info">
+    <span>火枪打火机</span>
+    <h3>Glictel Torch Lighter</h3>
+    <p>18 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 W130A 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/b-w206-box.jpg" alt="W206">
+    <img class="hover" src="images/product/b-w206-5-colors.jpg" alt="W206 colors">
+    <b>W206</b>
+  </div>
+  <div class="info">
+    <span>迷你火枪</span>
+    <h3>Glictel Mini Torch</h3>
+    <p>20 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 W206 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/c-w013-box.jpg" alt="W013">
+    <img class="hover" src="images/product/c-w013-5-colors.jpg" alt="W013 colors">
+    <b>W013</b>
+  </div>
+  <div class="info">
+    <span>防风电子</span>
+    <h3>Glictel Windproof Electronic</h3>
+    <p>25 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 W013 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/d-086-box.jpg" alt="086">
+    <img class="hover" src="images/product/d-086-5colors.jpg" alt="086 colors">
+    <b>086</b>
+  </div>
+  <div class="info">
+    <span>安全打火机</span>
+    <h3>Glictel Safety Lighter</h3>
+    <p>BOX PACK · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 086 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/e-w198-box.jpg" alt="W198">
+    <img class="hover" src="images/product/e-w198-5colors.jpg" alt="W198 colors">
+    <b>W198</b>
+  </div>
+  <div class="info">
+    <span>长嘴点火器</span>
+    <h3>Glictel Long Neck Lighter</h3>
+    <p>BOX PACK · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 W198 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/f-20ml-box.jpg" alt="20ML">
+    <img class="hover" src="images/product/f-20ml-pcs.jpg" alt="20ML colors">
+    <b>20ML</b>
+  </div>
+  <div class="info">
+    <span>补充气</span>
+    <h3>Glictel Gas Refill</h3>
+    <p>20ML · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 20ML 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/g-180ml-box.jpg" alt="180ML">
+    <img class="hover" src="images/product/g-180ml-pcs.jpg" alt="180ML colors">
+    <b>180ML</b>
+  </div>
+  <div class="info">
+    <span>补充气</span>
+    <h3>Glictel Lighter Butane</h3>
+    <p>180ML · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 180ML 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/h-300ml-box.jpg" alt="300ML">
+    <img class="hover" src="images/product/h-300ml-pcs.jpg" alt="300ML colors">
+    <b>300ML</b>
+  </div>
+  <div class="info">
+    <span>补充气</span>
+    <h3>Glictel Gas Refill</h3>
+    <p>300ML · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 300ML 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/i-fw-069-box.jpg" alt="FW-069">
+    <img class="hover" src="images/product/i-fw-069-4-colors.jpg" alt="FW-069 colors">
+    <b>FW-069</b>
+  </div>
+  <div class="info">
+    <span>可弯曲火枪</span>
+    <h3>Flicker Jet Flame Lighter</h3>
+    <p>BOX PACK · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 FW-069 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/j-fw-380-box.jpg" alt="FW-380">
+    <img class="hover" src="images/product/j-fw-380-4color.jpg" alt="FW-380 colors">
+    <b>FW-380</b>
+  </div>
+  <div class="info">
+    <span>图案打火机</span>
+    <h3>Flicker Pattern Lighter</h3>
+    <p>24 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 FW-380 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/k-fw-139-box.jpg" alt="FW-139">
+    <img class="hover" src="images/product/k-fw-139-5colors.jpg" alt="FW-139 colors">
+    <b>FW-139</b>
+  </div>
+  <div class="info">
+    <span>金属风打火机</span>
+    <h3>Flicker Metal Style Lighter</h3>
+    <p>25 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 FW-139 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/l-fw-011-box.jpg" alt="FW-011">
+    <img class="hover" src="images/product/l-fw-011-5colors.jpg" alt="FW-011 colors">
+    <b>FW-011</b>
+  </div>
+  <div class="info">
+    <span>渐变火机</span>
+    <h3>Flicker Jet Flame Gun</h3>
+    <p>25 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 FW-011 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/m-d16-box.jpg" alt="D16">
+    <img class="hover" src="images/product/m-d16-5colors.jpg" alt="D16 colors">
+    <b>D16</b>
+  </div>
+  <div class="info">
+    <span>DENIZ 欧洲版</span>
+    <h3>Deniz European Version</h3>
+    <p>BOX PACK · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 D16 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/n-fw-066-box.jpg" alt="FW-066">
+    <img class="hover" src="images/product/n-fw-066-5colors.jpg" alt="FW-066 colors">
+    <b>FW-066</b>
+  </div>
+  <div class="info">
+    <span>防风可充气</span>
+    <h3>Flicker Windproof Refillable</h3>
+    <p>50 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 FW-066 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/o-el-536-box.jpg" alt="EL-536">
+    <img class="hover" src="images/product/o-el-536-5colors.jpg" alt="EL-536 colors">
+    <b>EL-536</b>
+  </div>
+  <div class="info">
+    <span>主推热卖款</span>
+    <h3>Flicker EL-536</h3>
+    <p>50 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 EL-536 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img class="main" src="images/product/p-al-506-box.jpg" alt="AL-506">
+    <img class="hover" src="images/product/p-al-506-5colors.jpg" alt="AL-506 colors">
+    <b>AL-506</b>
+  </div>
+  <div class="info">
+    <span>防风气机</span>
+    <h3>Flicker AL-506</h3>
+    <p>30 PCS / BOX · 适合神料店、香烛店、杂货店、便利店长期补货。</p>
+    <a href="https://wa.me/60146023456?text=你好，我想询问 AL-506 批发价。">WhatsApp 询价</a>
+  </div>
+</article>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <h2>为什么适合传统门店？</h2>
+      <p>打火机属于高频小额消耗品，适合放在收银台、香烛区、神料货架旁边，容易形成自然加购。</p>
+    </div>
+
+    <div class="features">
+      <div class="feature"><b>容易陈列</b><p>盒装展示，不需要复杂货架，直接摆放就能卖。</p></div>
+      <div class="feature"><b>重复购买</b><p>打火机与补充气属于消耗品，适合长期补货。</p></div>
+      <div class="feature"><b>多款选择</b><p>普通火机、火枪、长嘴点火器、补充气都能搭配销售。</p></div>
+      <div class="feature"><b>批发跟进</b><p>网页负责展示与建立信任，最终报价通过 WhatsApp 处理。</p></div>
+    </div>
+
+    <div class="cta">
+      <div>
+        <h2>要拿货，直接 WhatsApp。</h2>
+        <p>发送“我要打火机批发产品表”，我们会安排产品资料与批发报价。</p>
+      </div>
+      <a class="btn" href="https://wa.me/60146023456?text=你好，我想要打火机批发产品表。">WhatsApp 联系</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© ILS ENTERPRISE · Glic & Flic Lighter Wholesale · All prices are subject to final confirmation by our company.</footer>
+</body>
+</html>
